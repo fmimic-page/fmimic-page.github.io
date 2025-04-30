@@ -569,47 +569,41 @@
       </div>
     </div> -->
     <!--/ Concurrent Work. -->
-<!-- 修改后的 Bi-manipulation task 部分 -->
-<div style="padding: 4rem 1.5rem; background: #f8f9fa;">
-  <div class="column is-full-width" style="max-width: 1200px; margin: 0 auto;">
+<div>
+  <div class="column is-full-width">
     <h2 class="title is-3" style="font-size: 30px; text-align: center; font-weight: bold; margin-bottom: 2rem;">Bi-manipulation task</h2>
-    
-    <!-- 视频容器 -->
-    <div style="position: relative; padding-top: 56.25%; box-shadow: 0 10px 20px rgba(0,0,0,0.1); border-radius: 12px; overflow: hidden;">
-      <video 
-        style="position: absolute; 
-               top: 0; 
-               left: 0; 
-               width: 100%; 
-               height: 100%; 
-               object-fit: cover;"
-        poster="" 
-        autoplay 
-        controls 
-        muted 
-        loop 
-        playsinline>
-        <source src="./static/videos/1234.mp4" type="video/mp4">
-      </video>
-      
-      <!-- 描述文字 -->
-      <p style="position: absolute;
-                bottom: 20px;
-                left: 50%;
-                transform: translateX(-50%);
-                color: white;
-                font-size: 1.25rem;
-                text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-                background: rgba(0,0,0,0.6);
-                padding: 8px 16px;
-                border-radius: 4px;
-                margin: 0;
-                z-index: 2;">
-        Dual-arm Coordination
-      </p>
+    <div class="video-long-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; padding: 0 1rem;">
+      <div style="background: #000; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.12);">
+        <div style="position: relative; padding-top: 56.25%;">
+          <video 
+            style="position: absolute; 
+                   top: 0; 
+                   left: 0; 
+                   width: 100%; 
+                   height: 100%; 
+                   object-fit: cover;"
+            autoplay 
+            controls 
+            muted 
+            loop 
+            playsinline>
+            <source src="./static/videos/1234.mp4" type="video/mp4">
+          </video>
+        </div>
+        <p style="text-align: center; 
+                 padding: 1rem; 
+                 color: #333;
+                 font-size: 1.1rem;
+                 font-weight: 500;
+                 background: white;
+                 margin: 0;">
+          Dual-arm Coordination
+        </p>
+      </div>
     </div>
   </div>
 </div>
+
 
   </div>
 </section>
