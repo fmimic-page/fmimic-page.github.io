@@ -569,21 +569,48 @@
       </div>
     </div> -->
     <!--/ Concurrent Work. -->
-<div>
-      <div class="column is-full-width">
-        <div class="columns is-vcentered interpolation-panel">
-        </div>
-        <h2 class="title is-3" style="font-size: 30px; text-align: center; font-weight: bold;">Bi-manipulation task</h2>
-        <div class="video-long-grid">
-          <div class="video-long">
-            <video poster="" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/1234.mp4" type="video/mp4">
-            </video>
-            <p class="long-video-description">Dual-arm Coordination</p>
-          </div>
-        </div>
-      </div>
+<!-- 修改后的 Bi-manipulation task 部分 -->
+<div style="padding: 4rem 1.5rem; background: #f8f9fa;">
+  <div class="column is-full-width" style="max-width: 1200px; margin: 0 auto;">
+    <h2 class="title is-3" style="font-size: 30px; text-align: center; font-weight: bold; margin-bottom: 2rem;">Bi-manipulation task</h2>
+    
+    <!-- 视频容器 -->
+    <div style="position: relative; padding-top: 56.25%; box-shadow: 0 10px 20px rgba(0,0,0,0.1); border-radius: 12px; overflow: hidden;">
+      <video 
+        style="position: absolute; 
+               top: 0; 
+               left: 0; 
+               width: 100%; 
+               height: 100%; 
+               object-fit: cover;"
+        poster="" 
+        autoplay 
+        controls 
+        muted 
+        loop 
+        playsinline>
+        <source src="./static/videos/1234.mp4" type="video/mp4">
+      </video>
+      
+      <!-- 描述文字 -->
+      <p style="position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                color: white;
+                font-size: 1.25rem;
+                text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+                background: rgba(0,0,0,0.6);
+                padding: 8px 16px;
+                border-radius: 4px;
+                margin: 0;
+                z-index: 2;">
+        Dual-arm Coordination
+      </p>
     </div>
+  </div>
+</div>
+
   </div>
 </section>
 </html>
